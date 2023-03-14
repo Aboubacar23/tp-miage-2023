@@ -40,7 +40,7 @@ TIP: [Rappel Git] Trois dépôts sont ici utilisés: le dépot Github de l'ensei
 
 *Le code est-il structuré en couches ? Quel problèmes ce code peut-il poser ?*
     
-    Oui le code est structuré en couche. Nous ppouvons constaté la vue applicative dans un dossier et les ressources dans un autre dossier et dans le package principal, toutes les parties de l'application sont dans un fichier dédié. 
+    Oui le code est structuré en couches parce que nous pouvons constater la vue applicative dans un dossier et les ressources dans un autre dossier et dans le package principal, toutes les parties de l'application sont dans un fichier dédié. 
     Le todoListApplication est la vue mais n'est pas implémentée
 
 *Où se trouve le code métier (voir la règle de gestion RG 1) ?*
@@ -59,8 +59,8 @@ docker run -it -e POSTGRES_PASSWORD=password -p 5432:5432 postgres
     
     Soit à expliquer la ligne de commande 
     docker run : permet de créer un container à partir d'une image
-    -i Garder STDIN ouvert, même si pas attaché
-    -t Allouer un pseudo-terminal    
+    -i : Garder STDIN ouvert, même si pas attaché
+    -t : Allouer un pseudo-terminal    
     -e : force Docker a utiliser un driver exec sépcifique
     -p : permt de publier un conteneur, et accessible via un port depuis le serveur.
 
