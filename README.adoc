@@ -42,7 +42,7 @@ TIP: [Rappel Git] Trois dépôts sont ici utilisés: le dépot Github de l'ensei
 
 *Où se trouve le code métier (voir la règle de gestion RG 1) ?
 
-    +e code metier de l'exo 1 se trouve`src/main/java/com.acme.todolist/TodoListController.java`
+    +le code metier de l'exo 1 se trouve`src/main/java/com.acme.todolist/TodoListController.java`
 
 *Cette règle est-elle facilement testable par un test unitaire ?
    +cette règle est testable par un test unitaire mais pas facile
@@ -55,7 +55,8 @@ docker run -it -e POSTGRES_PASSWORD=password -p 5432:5432 postgres
  + soit à expliquer la ligne de commande 
     docker run : permet de créer un container à partir d'une image
     -i Garder STDIN ouvert, même si pas attaché
-    -t Allouer un pseudo-terminal    -e : force Docker a utiliser un driver exec sépcifique
+    -t Allouer un pseudo-terminal    
+    -e : force Docker a utiliser un driver exec sépcifique
     -p : permt de publier un conteneur, et accessible via un port depuis le serveur.
 
 * Compléter le code manquant dans la méthode `TodoListController.createTodoItem()`
