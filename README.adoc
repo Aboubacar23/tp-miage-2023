@@ -40,15 +40,23 @@ TIP: [Rappel Git] Trois dépôts sont ici utilisés: le dépot Github de l'ensei
 
 *Le code est-il structuré en couches ? Quel problèmes ce code peut-il poser ?*
 
-*Où se trouve le code métier (voir la règle de gestion RG 1) ?*
+*Où se trouve le code métier (voir la règle de gestion RG 1) ?
 
-*Cette règle est-elle facilement testable par un test unitaire ?*
+    +e code metier de l'exo 1 se trouve`src/main/java/com.acme.todolist/TodoListController.java`
+
+*Cette règle est-elle facilement testable par un test unitaire ?
+   +cette règle est testable par un test unitaire mais pas facile
 
 * Lancer une base PostgreSQL en Docker dans un terminal (on lance ici la base en mode interactif pour visualiser son activité. Pour la lancer en tâche de fond, remplacer les options `it` par `d` comme 'daemon'):
 ```bash
 docker run -it -e POSTGRES_PASSWORD=password -p 5432:5432 postgres
 ```
 *Expliquer cette ligne de commande (y compris les options utilisées)*
+ + soit à expliquer la ligne de commande 
+    docker run : permet de créer un container à partir d'une image
+    -i Garder STDIN ouvert, même si pas attaché
+    -t Allouer un pseudo-terminal    -e : force Docker a utiliser un driver exec sépcifique
+    -p : permt de publier un conteneur, et accessible via un port depuis le serveur.
 
 * Compléter le code manquant dans la méthode `TodoListController.createTodoItem()`
 
