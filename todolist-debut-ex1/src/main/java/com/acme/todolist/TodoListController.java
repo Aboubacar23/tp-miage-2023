@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 import org.springframework.http.HttpStatus;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -35,9 +36,9 @@ public class TodoListController {
 
 	@PostMapping("/todos")
 	@ResponseStatus(code = HttpStatus.CREATED)
-	public void createTodoItem(@RequestBody TodoItem todoItem) {
-		// Code à compléter
-		// ...
+	public String createTodoItem(@RequestBody TodoItem todoItem) {
+		todoItemRepository.save(todoItem);
+		return "redirect:todos";
 	}
 
 	@GetMapping("/todos")
