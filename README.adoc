@@ -58,11 +58,10 @@ docker run -it -e POSTGRES_PASSWORD=password -p 5432:5432 postgres
 *Expliquer cette ligne de commande (y compris les options utilisées)*
     
     Soit à expliquer la ligne de commande 
-    docker run : permet de créer un container à partir d'une image
-    -i : Garder STDIN ouvert, même si pas attaché
-    -t : Allouer un pseudo-terminal    
-    -e : force Docker a utiliser un driver exec sépcifique
-    -p : permt de publier un conteneur, et accessible via un port depuis le serveur.
+    docker run : permet de créer un container à partir d'une image postgres
+     -it permet de lancer le conteneur en mode interactif avec un pseudo-terminal (utile pour les conteneurs qui ont une interface utilisateur).   
+     -e POSTGRES_PASSWORD=password" : permet de définir une variable d'environnement pour le mot de passe de l'utilisateur "postgres". Dans ce cas, le              mot de passe est défini comme étant "password".    
+     -p : permt de publier un conteneur, et accessible via un port depuis le serveur.
 
 * Compléter le code manquant dans la méthode `TodoListController.createTodoItem()`
 
