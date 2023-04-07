@@ -135,6 +135,15 @@ _Temps estimé : 20 mins_
 * Implémenter (en junit) des TU sur la règle de gestion qui consiste à afficher `[LATE!]` dans la description d'un item en retard de plus de 24h.
 
 *Quels types de tests devra-t-on écrire pour les adapteurs ?* 
+ - Tests d'intégration : ces tests permettent de vérifier que l'adaptateur est correctement intégré dans le système et qu'il communique correctement avec les autres composants.
+
+- Tests de performance : ces tests permettent de mesurer les temps de réponse de l'adaptateur en situation de charge, afin de s'assurer que celui-ci peut gérer le volume de données qu'il est censé traiter.
+
+- Tests de compatibilité : ces tests permettent de vérifier que l'adaptateur est compatible avec les différents protocoles et formats de données utilisés dans le système.
+
+- Tests de sécurité : ces tests permettent de vérifier que l'adaptateur ne présente pas de failles de sécurité ou de vulnérabilités susceptibles d'être exploitées par des attaquants.
+
+- Tests de régression : ces tests permettent de s'assurer que les modifications apportées à l'adaptateur ou au système n'ont pas introduit de nouveaux bugs ou de régressions par rapport à des versions précédentes.
 
 *S'il vous reste du temps, écrire quelques uns de ces types de test.*
 
