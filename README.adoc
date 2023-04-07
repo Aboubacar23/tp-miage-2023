@@ -1,6 +1,6 @@
 # TP MIAGE conception logicielle
 
-## Nom du(des) étudiant(e)(s) de ce monôme/binôme 
+## Projet de : Aboubacar Sidiki Condé , Abdoul AROWOLO, Garriel Angelau BELLEGARDE
 WARNING: NE PAS OUBLIER DE MENTIONNER LES DEUX NOMS SI VOUS ETES EN BINOME!
 
 #XXX# (et #YYY#)
